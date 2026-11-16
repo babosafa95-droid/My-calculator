@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>website</title>
+
+<link rel="stylesheet" href="style.css">
+	
+
+
+</head>
+<body>
+	
+  <header class="navbar">
+    <a href="#" class="logo">Flavor<span>House.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="#cart" class="cart-link">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FRESH FOOD, GREAT TASTE</p>
+        <h1>Good food.<br>Good mood.</h1>
+        <p>
+          Discover delicious meals prepared with fresh
+          ingredients and served with love.
+        </p>
+        <a href="#menu" class="primary-btn">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">MADE FRESH FOR YOU</p>
+        <h2>Our Menu</h2>
+        <p>Find your next favorite meal.</p>
+      </div>
+
+      <input
+        type="search"
+        id="search"
+        placeholder="Search for a dish..."
+        aria-label="Search for food"
+      >
+
+      <div class="categories">
+        <button class="category active" data-category="All">All</button>
+        <button class="category" data-category="Burgers">Burgers</button>
+        <button class="category" data-category="Pizza">Pizza</button>
+        <button class="category" data-category="Sides">Sides</button>
+        <button class="category" data-category="Drinks">Drinks</button>
+      </div>
+
+      <div class="food-grid" id="food-grid"></div>
+      <p id="empty-message" hidden>No dishes found. Try another search.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">OUR STORY</p>
+      <h2>Food made with passion.</h2>
+      <p>
+        At Flavor House, we believe that every meal should
+        be special. We bring fresh ingredients, delicious
+        recipes, and friendly service to your table.
+      </p>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items">
+        <p class="muted">Your cart is empty. Add something delicious!</p>
+      </div>
+
+      <div class="cart-total">
+        <strong>Total</strong>
+        <strong id="cart-total">$0.00</strong>
+      </div>
+
+      <button id="checkout-btn" class="primary-btn" disabled>
+        Place Order
+      </button>
+
+      <p class="small-note">
+        Demo website: orders are not sent to a restaurant.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Flavor House. Made with love.</p>
+  </footer>
+
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
